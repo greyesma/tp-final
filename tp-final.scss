@@ -1,0 +1,83 @@
+$red-boost: rgb(238,65,55);
+
+@keyframes solicitar-demo {
+	from {background-color:transparent; color:$red-boost};
+	to {background-color:$red-boost; color:white};
+} 
+
+@keyframes delay-navegador {
+	from {color:white};
+	to {color:$red-boost}
+}
+
+* {
+	margin:0;
+	padding:0;
+	font-family:'Open Sans', sans-serif;
+}
+
+#home { 
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(Home2.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  div h1 {
+  	color:white;
+  	font-size: 3em;
+  	text-transform: uppercase;
+  	letter-spacing: 5px;
+  	text-align:center;
+  }
+  div h3 {
+  	color:white;
+  	font-weight: 300;
+  	font-style:italic;
+  	text-align:center;
+  }
+}
+
+#navbar {
+	background: none;
+	border:none;
+	padding:50px;
+	ul {
+		li a{
+			padding:10px 30px;
+			background-color:transparent;
+			color:white;
+			&:hover {
+				color:$red-boost;
+				animation-name: delay-navegador;
+				animation-duration:0.4s;
+			}
+			&#solicitar-demo {
+				border:$red-boost 1px solid;
+				border-radius: 5px;
+				color:$red-boost;
+				&:hover {
+					animation-name: solicitar-demo;
+					animation-duration:0.4s;
+					animation-fill-mode: forwards;
+				}
+			}
+		}
+	}
+}
+
+#logo-boost {
+	width:140px;
+} 
+
+
+
+
+
+
+
+
