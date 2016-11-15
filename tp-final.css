@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @keyframes solicitar-demo {
   from {
     background-color: transparent;
@@ -30,7 +31,7 @@
     color: white;
     font-size: 3em;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     text-align: center; }
   #home div h3 {
     color: white;
@@ -58,8 +59,55 @@
         animation-name: solicitar-demo;
         animation-duration: 0.4s;
         animation-fill-mode: forwards; }
+  #navbar div div a #hamburguer {
+    background-color: gray !important; }
 
 #logo-boost {
   width: 140px; }
+
+/* Sección Soluciones */
+#seccion-soluciones {
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-content: center; }
+  #seccion-soluciones div {
+    text-align: center; }
+    #seccion-soluciones div h1 {
+      margin: auto;
+      color: #5a5a5a;
+      margin-top: 20px; }
+  #seccion-soluciones .separador-soluciones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 70%; }
+    #seccion-soluciones .separador-soluciones .solucion {
+      border: 1px #ebebeb solid;
+      border-radius: 5px;
+      width: 15%;
+      height: 80%;
+      min-width: 225px;
+      min-height: 225px;
+      margin: 30px;
+      padding: 30px;
+      background: #f2f2f2;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      /*align-content:center;*/
+      align-items: center;
+      text-align: center;
+      transition: all 0.2s; }
+      #seccion-soluciones .separador-soluciones .solucion .logo-solucion {
+        width: 180px; }
+      #seccion-soluciones .separador-soluciones .solucion:hover {
+        background: #e6e6e6;
+        border: #d2d2d2;
+        -webkit-box-shadow: 0px 0px 10px 0px #646464;
+        -moz-box-shadow: 0px 0px 10px 0px #646464;
+        box-shadow: 0px 0px 10px 0px #646464; }
 
 /*# sourceMappingURL=tp-final.css.map */

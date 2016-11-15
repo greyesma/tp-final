@@ -14,15 +14,20 @@
 	<!-- Sección home -->
 	<nav id="navbar" class="navbar navbar-inverse navbar-fixed-top">
 	  <div class="container-fluid">
-	    <div class="navbar-header">
-	    <a href="#" class="navbar-left"><img id="logo-boost" src="logo_boost_2.png"></a>
+		<div class="navbar-header">
+	    	<a href="#" class="navbar-left"><img id="logo-boost" src="logo_boost_2.png"></a>
+		  	<a id="hamburguer" class="navbar-toggle collapsed btn btn-navbar" data-toggle="collapse" data-target="#nav-collapse">
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			</a>
 	    </div>
-	    <div class="collapse navbar-collapse">
-		    <ul class="nav navbar-nav navbar-right ">
-		      <li class="active"><a href="#">Home</a></li>
-		      <li><a href="#">Productos</a></li>
-		      <li><a href="#">F.A.Q.</a></li>
-		      <li><a href="#">Precios</a></li> 
+	    <div id="nav-collapse" class="collapse navbar-collapse">
+	        <ul class="nav navbar-nav navbar-right ">
+		      <li><a href="#">Soluciones</a></li>
+		      <li><a href="#">Clientes</a></li>
+		      <li><a href="#">Precios</a></li>
+		      <li><a href="#">F.A.Q.</a></li> 
 		      <li><a href="#">Contacto</a></li> 
 		      <li><a id="solicitar-demo" href="#">Solicitar demo</a></li> 
 		    </ul>
@@ -37,7 +42,35 @@
 			<h3>Boost te ayuda a gestionar, medir y optimizar las capacitaciones en tu empresa</h3>
 		</div>	
 	</div>
-	
-
+	<!-- Soluciones -->
+	<div id="seccion-soluciones">
+		<div><h1>Soluciones</h1></div>
+		<div class="separador-soluciones">
+			<div class="solucion">
+				<img src="Logo boost - needs.png" class="logo-solucion">
+				<h5>Determina tus necesidades críticas de formación</h5>
+				<button class="btn btn-default">Ver más</button>
+			</div>
+			<div class="solucion">
+				<img src="Logo boost - manage.png" class="logo-solucion">
+				<h5>Determina tus necesidades críticas de formación</h5>
+				<button class="btn btn-default">Ver más</button>
+			</div>
+			<div class="solucion">
+				<img src="Logo boost - impact.png" class="logo-solucion">
+				<h5>Determina tus necesidades críticas de formación</h5>
+				<button class="btn btn-default">Ver más</button>
+			</div>
+			<div class="solucion">
+				<img src="Logo boost - monitor.png" class="logo-solucion">
+				<h5>Determina tus necesidades críticas de formación</h5>
+				<button class="btn btn-default">Ver más</button>
+			</div>
+		</div>		
+			
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
